@@ -9,4 +9,9 @@ public class Controller {
     public String index() {
         return "Hello Spring-Boot app successfully deployed and running on ROSA -- Modified";
     }
+
+    @RequestMapping("/getData")
+    public String getData() {
+        return "{ data1 : 1, data2 : 2 }";
+    }
 }
